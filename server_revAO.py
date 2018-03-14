@@ -292,12 +292,9 @@ joycount = pygame.joystick.get_count()
 print( joycount )
 for x in (0, joycount):
 print(joysticks)  # print list of connected controllers
-while(joycount >=1)
+while(joycount == 0)
 {
-	manual_overide()
+	startServer()
 	joycount = pygame.joystick.get_count()
 }
-
-startServer()
-
-
+manual_overide()
